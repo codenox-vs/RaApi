@@ -36,7 +36,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * ClientDNS
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ClientDNS {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -135,7 +135,7 @@ public class ClientDNS {
    * Pre validated client domain reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "cld-10877aec-412f-4b96-a5d4-f5f95da8634e", required = true, value = "Pre validated client domain reference")
 
   public String getUuid() {
@@ -155,7 +155,7 @@ public class ClientDNS {
    * Client domain in punycode
    * @return domain
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "xn--dj-kia8a.vu.com", required = true, value = "Client domain in punycode")
 
   public String getDomain() {
@@ -172,7 +172,7 @@ public class ClientDNS {
    * Client domain in unicode
    * @return domainUnicode
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "déjà.vu.com", required = true, value = "Client domain in unicode")
 
   public String getDomainUnicode() {
@@ -186,7 +186,7 @@ public class ClientDNS {
    * Indicates if the domain is validated
    * @return validated
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicates if the domain is validated")
 
   public Boolean getValidated() {
@@ -206,7 +206,7 @@ public class ClientDNS {
    * Indicates if the domain is a trusted domain (for private PKIs). This setting is linked to the certificate product DNS validation rule for Private PKIs.
    * @return trustedDomain
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicates if the domain is a trusted domain (for private PKIs). This setting is linked to the certificate product DNS validation rule for Private PKIs.")
 
   public Boolean getTrustedDomain() {
@@ -223,7 +223,7 @@ public class ClientDNS {
    * Indicates when the domain got validated
    * @return timeValidated
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-01-12T23:20:50.520Z", value = "Indicates when the domain got validated")
 
   public OffsetDateTime getTimeValidated() {
@@ -237,7 +237,7 @@ public class ClientDNS {
    * DNS validation type
    * @return validationMethod
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "cabdns", required = true, value = "DNS validation type")
 
   public String getValidationMethod() {
@@ -251,7 +251,7 @@ public class ClientDNS {
    * The random value to add to the DNS TXT record for the domain
    * @return randomValue
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "", value = "The random value to add to the DNS TXT record for the domain")
 
   public String getRandomValue() {
@@ -265,7 +265,7 @@ public class ClientDNS {
    * Indicates when the random value was created
    * @return randomValueTimeCreated
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-01-12T23:20:50.520Z", value = "Indicates when the random value was created")
 
   public OffsetDateTime getRandomValueTimeCreated() {
@@ -279,7 +279,7 @@ public class ClientDNS {
    * Indicates when the random value expires
    * @return randomValueTimeExpire
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-01-12T23:20:50.520Z", value = "Indicates when the random value expires")
 
   public OffsetDateTime getRandomValueTimeExpire() {
@@ -293,7 +293,7 @@ public class ClientDNS {
    * Indicates the validation result
    * @return validationResult
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Validated XYZ ...", value = "Indicates the validation result")
 
   public String getValidationResult() {
@@ -307,7 +307,7 @@ public class ClientDNS {
    * Indicates when the random value was created
    * @return timeExpired
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-01-12T23:20:50.520Z", value = "Indicates when the random value was created")
 
   public OffsetDateTime getTimeExpired() {
@@ -321,7 +321,7 @@ public class ClientDNS {
    * Indicates if the pre validation of the domain has expired
    * @return expired
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "false", required = true, value = "Indicates if the pre validation of the domain has expired")
 
   public Boolean getExpired() {
@@ -335,7 +335,7 @@ public class ClientDNS {
    * Indicates if the random value is expired
    * @return randomValueTimeExpired
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "false", required = true, value = "Indicates if the random value is expired")
 
   public Boolean getRandomValueTimeExpired() {
@@ -355,7 +355,7 @@ public class ClientDNS {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public ClientDomainValidationStatus getStatus() {

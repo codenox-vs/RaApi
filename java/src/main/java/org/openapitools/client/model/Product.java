@@ -37,7 +37,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * Product
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Product {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -281,7 +281,7 @@ public class Product {
    * Product UUID reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "pma-123e4567-e89b-12d3-a456-426614174000", required = true, value = "Product UUID reference")
 
   public String getUuid() {
@@ -295,7 +295,7 @@ public class Product {
    * Certificate product name
    * @return productName
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "SSL Silver", value = "Certificate product name")
 
   public String getProductName() {
@@ -309,7 +309,7 @@ public class Product {
    * Product additional description
    * @return productDescription
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "SSL NCP policy with domain validation", value = "Product additional description")
 
   public String getProductDescription() {
@@ -323,7 +323,7 @@ public class Product {
    * Key generation protocol
    * @return keyGenerationType
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "PKCS10", required = true, value = "Key generation protocol")
 
   public KeyGenerationTypeEnum getKeyGenerationType() {
@@ -343,7 +343,7 @@ public class Product {
    * Get keyType
    * @return keyType
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public KeyType getKeyType() {
@@ -360,7 +360,7 @@ public class Product {
    * Indicate if the certificate sends a notification on issuance
    * @return issuanceNotification
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate sends a notification on issuance")
 
   public Boolean getIssuanceNotification() {
@@ -374,7 +374,7 @@ public class Product {
    * Indicate if the certificate sends a notification on revocation
    * @return revocationNotification
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate sends a notification on revocation")
 
   public Boolean getRevocationNotification() {
@@ -388,7 +388,7 @@ public class Product {
    * Indicate if the certificate requires an authorization on issuance/revocation
    * @return authorization
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate requires an authorization on issuance/revocation")
 
   public Boolean getAuthorization() {
@@ -402,7 +402,7 @@ public class Product {
    * Indicate if the certificate sends a notification for renewal
    * @return renewalRule
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate sends a notification for renewal")
 
   public Boolean getRenewalRule() {
@@ -416,7 +416,7 @@ public class Product {
    * Indicate if the certificate is published to the public LDAP after issuance
    * @return publishCertificate
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate is published to the public LDAP after issuance")
 
   public Boolean getPublishCertificate() {
@@ -430,7 +430,7 @@ public class Product {
    * Indicate if the certificate publication can be overridden
    * @return clientPublishCertificateOverride
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate if the certificate publication can be overridden")
 
   public Boolean getClientPublishCertificateOverride() {
@@ -444,7 +444,7 @@ public class Product {
    * Indicate the default value if publication override is enabled
    * @return clientPublishCertificateOverrideDefault
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicate the default value if publication override is enabled")
 
   public Boolean getClientPublishCertificateOverrideDefault() {
@@ -458,7 +458,7 @@ public class Product {
    * Indicate if the certificate product has an expiration date
    * @return expirationDate
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Tue Feb 15 00:00:00 UTC 2022", value = "Indicate if the certificate product has an expiration date")
 
   public LocalDate getExpirationDate() {
@@ -472,7 +472,7 @@ public class Product {
    * When enabled, additional certificate issuance notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalIssuanceNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional certificate issuance notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalIssuanceNotificationRecipients() {
@@ -486,7 +486,7 @@ public class Product {
    * When enabled, additional certificate revocation notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalRevocationNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional certificate revocation notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalRevocationNotificationRecipients() {
@@ -500,7 +500,7 @@ public class Product {
    * When enabled, additional certificate renewal notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalRenewalNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional certificate renewal notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalRenewalNotificationRecipients() {
@@ -514,7 +514,7 @@ public class Product {
    * When enabled, additional authorization notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalAuthorizationNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional authorization notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalAuthorizationNotificationRecipients() {
@@ -528,7 +528,7 @@ public class Product {
    * When enabled, additional authorization notification recipients (for accepted requests) can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalAuthorizationAcceptedNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional authorization notification recipients (for accepted requests) can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalAuthorizationAcceptedNotificationRecipients() {
@@ -542,7 +542,7 @@ public class Product {
    * When enabled, additional authorization notification recipients (for rejected requests) can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalAuthorizationRejectedNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, additional authorization notification recipients (for rejected requests) can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalAuthorizationRejectedNotificationRecipients() {
@@ -556,7 +556,7 @@ public class Product {
    * When enabled, indicates CAB DNS or HTTP domain validation is required.
    * @return isCABDNSValidationRequired
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, indicates CAB DNS or HTTP domain validation is required.")
 
   public Boolean getIsCABDNSValidationRequired() {
@@ -570,7 +570,7 @@ public class Product {
    * When enabled, indicates that additional notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.
    * @return allowAdditionalCABDNSNotificationRecipients
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, indicates that additional notification recipients can be added to the certificate order. Additional recipients are skipped when disabled.")
 
   public Boolean getAllowAdditionalCABDNSNotificationRecipients() {
@@ -584,7 +584,7 @@ public class Product {
    * When enabled, indicates CAB DNS via constructed email link to domain owner is required.
    * @return isCABDNSEmailLinkValidationRequired
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, indicates CAB DNS via constructed email link to domain owner is required.")
 
   public Boolean getIsCABDNSEmailLinkValidationRequired() {
@@ -598,7 +598,7 @@ public class Product {
    * When enabled, indicates that the recipient must validate the email box via a link.
    * @return isEmailBoxValidationRequired
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, indicates that the recipient must validate the email box via a link.")
 
   public Boolean getIsEmailBoxValidationRequired() {
@@ -612,7 +612,7 @@ public class Product {
    * When enabled, registration documents must provided with the certificate order. Documents are skipped when disabled.
    * @return requiresRegistrationDocuments
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, registration documents must provided with the certificate order. Documents are skipped when disabled.")
 
   public Boolean getRequiresRegistrationDocuments() {
@@ -626,7 +626,7 @@ public class Product {
    * When enabled, registration documents must provided when submitting the certificate order. When disabled, documents can be added to the certificate order at a later time via the RA UI.
    * @return requiresRegistrationDocumentsOnRegister
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "When enabled, registration documents must provided when submitting the certificate order. When disabled, documents can be added to the certificate order at a later time via the RA UI.")
 
   public Boolean getRequiresRegistrationDocumentsOnRegister() {
@@ -640,7 +640,7 @@ public class Product {
    * PDF registration document are allowed.
    * @return allowRegistrationDocumentsPDF
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "PDF registration document are allowed.")
 
   public Boolean getAllowRegistrationDocumentsPDF() {
@@ -654,7 +654,7 @@ public class Product {
    * JPG/PNG registration images are allowed.
    * @return allowRegistrationDocumentsJPG
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "JPG/PNG registration images are allowed.")
 
   public Boolean getAllowRegistrationDocumentsJPG() {
@@ -668,7 +668,7 @@ public class Product {
    * Indicates if a revocation code is issued for the recipient (link to self service revocation).
    * @return isGenerateRevocationCode
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "true", required = true, value = "Indicates if a revocation code is issued for the recipient (link to self service revocation).")
 
   public Boolean getIsGenerateRevocationCode() {
@@ -688,7 +688,7 @@ public class Product {
    * Get productValidity
    * @return productValidity
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public ProductValidity getProductValidity() {

@@ -33,7 +33,7 @@ import org.openapitools.client.JSON;
 /**
  * RegistrationDocument
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RegistrationDocument {
   public static final String SERIALIZED_NAME_DOCUMENT_NAME = "documentName";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_NAME)
@@ -56,7 +56,7 @@ public class RegistrationDocument {
    * document name
    * @return documentName
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "my_document.pdf", required = true, value = "document name")
 
   public String getDocumentName() {
@@ -79,7 +79,7 @@ public class RegistrationDocument {
    * Base64 encoded byte array of the document content
    * @return document
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "Base64 encoded byte array of the document content")
 
   public String getDocument() {

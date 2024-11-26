@@ -39,7 +39,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * CertificateOrder
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CertificateOrder {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -110,7 +110,7 @@ public class CertificateOrder {
    * Certificate Order reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "ord-f0725b50-c533-4802-a844-de57bfb7a80e", required = true, value = "Certificate Order reference")
 
   public String getUuid() {
@@ -133,7 +133,7 @@ public class CertificateOrder {
    * Certificate Order creation date time
    * @return createdOn
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", required = true, value = "Certificate Order creation date time")
 
   public OffsetDateTime getCreatedOn() {
@@ -156,7 +156,7 @@ public class CertificateOrder {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public CertificateOrderStatus getStatus() {
@@ -173,7 +173,7 @@ public class CertificateOrder {
    * Client reference UUID
    * @return clientReference
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "cli-123e4567-e89b-12d3-a456-426614174000", required = true, value = "Client reference UUID")
 
   public String getClientReference() {
@@ -187,7 +187,7 @@ public class CertificateOrder {
    * Product reference UUID
    * @return productReference
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "pma-123e4567-e89b-12d3-a456-426614174000", required = true, value = "Product reference UUID")
 
   public String getProductReference() {
@@ -207,7 +207,7 @@ public class CertificateOrder {
    * Get certificate
    * @return certificate
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public Certificate getCertificate() {
@@ -224,7 +224,7 @@ public class CertificateOrder {
    * Certificate chain
    * @return certificateChain
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "Certificate chain")
 
   public List<String> getCertificateChain() {
@@ -238,7 +238,7 @@ public class CertificateOrder {
    * User defined tags/labels
    * @return tags
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "User defined tags/labels")
 
   public List<String> getTags() {
@@ -266,7 +266,7 @@ public class CertificateOrder {
    * Get additionalRecipients
    * @return additionalRecipients
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<AdditionalRecipient> getAdditionalRecipients() {
@@ -283,7 +283,7 @@ public class CertificateOrder {
    * email of the person who created the order
    * @return issuedBy
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "some@email.org", value = "email of the person who created the order")
 
   public String getIssuedBy() {

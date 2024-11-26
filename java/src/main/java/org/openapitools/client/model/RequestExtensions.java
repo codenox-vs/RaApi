@@ -35,7 +35,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * RequestExtensions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestExtensions {
   public static final String SERIALIZED_NAME_MICROSOFT_SECURITY_IDENTIFIER = "microsoftSecurityIdentifier";
   @SerializedName(SERIALIZED_NAME_MICROSOFT_SECURITY_IDENTIFIER)
@@ -74,7 +74,7 @@ public class RequestExtensions {
    * Microsoft Security Identifier (SID) Override or add the X.509 extension is present in the certificate policy 
    * @return microsoftSecurityIdentifier
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "S-1-5-32", value = "Microsoft Security Identifier (SID) Override or add the X.509 extension is present in the certificate policy ")
 
   public String getMicrosoftSecurityIdentifier() {
@@ -97,7 +97,7 @@ public class RequestExtensions {
    * Microsoft Policy Template Object Identifier. Override or add the X.509 extension is present in the certificate policy 
    * @return microsoftPolicyTemplateOID
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2.16.756.3.2.1.0", value = "Microsoft Policy Template Object Identifier. Override or add the X.509 extension is present in the certificate policy ")
 
   public String getMicrosoftPolicyTemplateOID() {
@@ -120,7 +120,7 @@ public class RequestExtensions {
    * Get requestDNS
    * @return requestDNS
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RequestDNS getRequestDNS() {
@@ -143,7 +143,7 @@ public class RequestExtensions {
    * Get requestRFC822
    * @return requestRFC822
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RequestRFC822 getRequestRFC822() {
@@ -166,7 +166,7 @@ public class RequestExtensions {
    * Get requestUPN
    * @return requestUPN
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RequestUPN getRequestUPN() {
@@ -189,7 +189,7 @@ public class RequestExtensions {
    * Get requestIP
    * @return requestIP
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RequestIP getRequestIP() {

@@ -33,7 +33,7 @@ import org.openapitools.client.JSON;
 /**
  * DNS
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class DNS {
   public static final String SERIALIZED_NAME_DNS = "dns";
   @SerializedName(SERIALIZED_NAME_DNS)
@@ -60,7 +60,7 @@ public class DNS {
    * requested domain name (gets converted to punycode if required)
    * @return dns
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "support.sample.org", required = true, value = "requested domain name (gets converted to punycode if required)")
 
   public String getDns() {
@@ -83,7 +83,7 @@ public class DNS {
    * Append base domain to wildcard DNS. Adds sample.org when *.sample.org is requested. Applies only to certificate policies which allow wildcard issuance. This flag has no effect if the certificate policy does not include the wildcard option. 
    * @return includeBaseDomainForWildcard
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "Append base domain to wildcard DNS. Adds sample.org when *.sample.org is requested. Applies only to certificate policies which allow wildcard issuance. This flag has no effect if the certificate policy does not include the wildcard option. ")
 
   public Boolean getIncludeBaseDomainForWildcard() {
@@ -106,7 +106,7 @@ public class DNS {
    * Append www to requested DNS.  Adds www.sample.org when sample.org is requested. When enabled, www is prefixed to all requested DNS. 
    * @return includeWWWDomain
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "Append www to requested DNS.  Adds www.sample.org when sample.org is requested. When enabled, www is prefixed to all requested DNS. ")
 
   public Boolean getIncludeWWWDomain() {

@@ -38,7 +38,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * IssueRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class IssueRequest {
   public static final String SERIALIZED_NAME_PRODUCT_REFERENCE = "productReference";
   @SerializedName(SERIALIZED_NAME_PRODUCT_REFERENCE)
@@ -97,7 +97,7 @@ public class IssueRequest {
    * Product reference
    * @return productReference
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "pma-10877aec-412f-4b96-a5d4-f5f95da8634e", required = true, value = "Product reference")
 
   public String getProductReference() {
@@ -120,7 +120,7 @@ public class IssueRequest {
    * CSR PEM encoded with or without ----BEGIN/END CERTIFICATE REQUEST-----. When null, a key-pair is generated if the certificate policy allows it (SubjectDN and optional overrides must be provided where necessary).
    * @return csr
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "----BEGIN CERTIFICATE REQUEST----- MIICijCCAXICAQAwGTEXMBUGA1UEAwwOd3d3LnNhbXBsZS5vcmcwggEiMA0GCSqG SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCY6+oWhcAadQJ3kuNHZIbujX6yt11MN7RN YIf1+tCFK/zHlbrekiochGQXHasbbTcAqVPM+atvvPl5BMQO6BW8/RzpKC05WAQL wM580Qnq7WcOUX+h+tU6v0W/mRF0KyEt2eI7W+J1ec27AYS2SMeDVyVN/dY7Ca8o x+glgw6MRjh4EQyk9E6v0BU5DaHqvUEhFArloW/t3XCps2Oxd15gqjm0tuEzaXul 6VOM4e7CjQuapG1D4mD6TZwEl9A26eVROiRbsgWMCjSYOrCDxsel873kDJoYv+8E YxbAxFlzg7RVBI0Th3vUAgawaPjMz7q2xOOYv+L64fI4s0WQFbbrAgMBAAGgLDAq BgkqhkiG9w0BCQ4xHTAbMBkGA1UdEQQSMBCCDnd3dy5zYW1wbGUub3JnMA0GCSqG SIb3DQEBCwUAA4IBAQAzegZ0PvLM22mie5eolWC9VHH00s3eazvYYpvzecsfDr9k o8omcsfZVE679R7WmAmicPLC8NYMTPGQHStu3MKyxAzw/GHvi2C1BSBx3lx0WDno Jh02r5J/qurxGTZihSr9GnUAU1I3Ht5Lboz/ITEslNMOzZFFIm7e2knfqchhyQRS ilT3LgHWAc490z/lWg63IbC4DVfl5SRtupKjFixyJKU7rHnkBb9fwBGn/mcQPcvq g9W5jRRvcCfmufSdtuzkuvVTR7AcqzrlAFhmwMv1Yll2eMv2qD40jjb0sF45bcu0 CRg0mu4um+/DZaWV6IUOiTPj6wewH+909Ov8f2G+ ----END CERTIFICATE REQUEST----- ", value = "CSR PEM encoded with or without ----BEGIN/END CERTIFICATE REQUEST-----. When null, a key-pair is generated if the certificate policy allows it (SubjectDN and optional overrides must be provided where necessary).")
 
   public String getCsr() {
@@ -143,7 +143,7 @@ public class IssueRequest {
    * Get overrides
    * @return overrides
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RequestOverrides getOverrides() {
@@ -174,7 +174,7 @@ public class IssueRequest {
    * Get additionalRecipients
    * @return additionalRecipients
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<AdditionalRecipient> getAdditionalRecipients() {
@@ -205,7 +205,7 @@ public class IssueRequest {
    * Get registrationDocuments
    * @return registrationDocuments
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<RegistrationDocument> getRegistrationDocuments() {
@@ -236,7 +236,7 @@ public class IssueRequest {
    * Get tags
    * @return tags
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<String> getTags() {
@@ -259,7 +259,7 @@ public class IssueRequest {
    * User note added to issued certificate order
    * @return note
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "user free text", value = "User note added to issued certificate order")
 
   public String getNote() {
@@ -282,7 +282,7 @@ public class IssueRequest {
    * Publish certificate to repository. Publication occurs if option is enabled on certificate policy or if the account has the option enabled to override the publication. 
    * @return publishCertificate
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "Publish certificate to repository. Publication occurs if option is enabled on certificate policy or if the account has the option enabled to override the publication. ")
 
   public Boolean getPublishCertificate() {
@@ -305,7 +305,7 @@ public class IssueRequest {
    * Request is sent asynchronously to the backend by default.  Setting this value to _true_ will wait until the certificate is issued and return the completed certificate order. For successful synchrone issuance, _insure_ that you have all prerequisites for DNS validation and/or Authorization fulfilled. 
    * @return synchrone
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "Request is sent asynchronously to the backend by default.  Setting this value to _true_ will wait until the certificate is issued and return the completed certificate order. For successful synchrone issuance, _insure_ that you have all prerequisites for DNS validation and/or Authorization fulfilled. ")
 
   public Boolean getSynchrone() {
@@ -328,7 +328,7 @@ public class IssueRequest {
    * When server backend has T&amp;C enabled, this value is checked. 
    * @return acceptTandC
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "When server backend has T&C enabled, this value is checked. ")
 
   public Boolean getAcceptTandC() {
@@ -351,7 +351,7 @@ public class IssueRequest {
    * Include the certificate chain in the reply (only valid when &#39;synchrone&#39; is true). 
    * @return includeCertificateChain
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "Include the certificate chain in the reply (only valid when 'synchrone' is true). ")
 
   public Boolean getIncludeCertificateChain() {

@@ -38,7 +38,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * SearchCertificateOrder
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SearchCertificateOrder {
   public static final String SERIALIZED_NAME_ORDER_REFERENCE = "orderReference";
   @SerializedName(SERIALIZED_NAME_ORDER_REFERENCE)
@@ -93,7 +93,7 @@ public class SearchCertificateOrder {
    * Certificate Order reference
    * @return orderReference
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "ord-f0725b50-c533-4802-a844-de57bfb7a80e", value = "Certificate Order reference")
 
   public String getOrderReference() {
@@ -116,7 +116,7 @@ public class SearchCertificateOrder {
    * Certificate serial number (Big Integer HEX encoded) with optional wildcard attributes ? and/or *
    * @return serialNumber
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "3893409CB*66E1F09?", value = "Certificate serial number (Big Integer HEX encoded) with optional wildcard attributes ? and/or *")
 
   public String getSerialNumber() {
@@ -147,7 +147,7 @@ public class SearchCertificateOrder {
    * Get orderStatus
    * @return orderStatus
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<CertificateOrderStatus> getOrderStatus() {
@@ -178,7 +178,7 @@ public class SearchCertificateOrder {
    * Get revocationReason
    * @return revocationReason
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public List<RevocationReason> getRevocationReason() {
@@ -209,7 +209,7 @@ public class SearchCertificateOrder {
    * Client reference UUID
    * @return clientReferences
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "[\"cli-123e4567-e89b-12d3-a456-426614174000\"]", value = "Client reference UUID")
 
   public List<String> getClientReferences() {
@@ -232,7 +232,7 @@ public class SearchCertificateOrder {
    * Certificate Order not starting after Date
    * @return startAfter
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Tue Mar 20 00:00:00 UTC 2018", value = "Certificate Order not starting after Date")
 
   public LocalDate getStartAfter() {
@@ -255,7 +255,7 @@ public class SearchCertificateOrder {
    * Certificate Order not starting before Date
    * @return startBefore
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Sun Mar 25 00:00:00 UTC 2018", value = "Certificate Order not starting before Date")
 
   public LocalDate getStartBefore() {
@@ -278,7 +278,7 @@ public class SearchCertificateOrder {
    * Any certificate attribute OID or value with optional wildcard attributes ? and/or *
    * @return attribute
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "s?me@emai* or 2.5.4.r or street", value = "Any certificate attribute OID or value with optional wildcard attributes ? and/or *")
 
   public String getAttribute() {
@@ -301,7 +301,7 @@ public class SearchCertificateOrder {
    * Include the certificate chain in the certificate order when available
    * @return includeCertificateChain
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "true", value = "Include the certificate chain in the certificate order when available")
 
   public Boolean getIncludeCertificateChain() {
@@ -332,7 +332,7 @@ public class SearchCertificateOrder {
    * Customer label/tags
    * @return tags
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "[\"my.cmdb-tag\",\"my.cmdb-label\"]", value = "Customer label/tags")
 
   public List<String> getTags() {

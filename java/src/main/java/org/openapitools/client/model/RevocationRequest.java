@@ -36,7 +36,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * RevocationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RevocationRequest {
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
@@ -120,7 +120,7 @@ public class RevocationRequest {
    * Certificate serial number (Big Integer HEX encoded)
    * @return serialNumber
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "3893409CB666E1F092B7B6F28E1EAF4582AA7F21", required = true, value = "Certificate serial number (Big Integer HEX encoded)")
 
   public String getSerialNumber() {
@@ -143,7 +143,7 @@ public class RevocationRequest {
    * Revocation reason
    * @return revocationReason
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "CESSATION_OF_OPERATION", required = true, value = "Revocation reason")
 
   public RevocationReasonEnum getRevocationReason() {
@@ -166,7 +166,7 @@ public class RevocationRequest {
    * Certificate issuer distinguished name
    * @return issuerName
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "DC=COM,DC=Some Domain,OU=Some Organizational Unit,CN=Some SubCA", required = true, value = "Certificate issuer distinguished name")
 
   public String getIssuerName() {
@@ -189,7 +189,7 @@ public class RevocationRequest {
    * First- and last name of revocation requestor. Revocation requestor must be used when API account is of type SERVICE_ACCOUNT
    * @return revocationRequestor
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "John Doe", value = "First- and last name of revocation requestor. Revocation requestor must be used when API account is of type SERVICE_ACCOUNT")
 
   public String getRevocationRequestor() {

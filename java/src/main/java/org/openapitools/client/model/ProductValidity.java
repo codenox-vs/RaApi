@@ -37,7 +37,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * ProductValidity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ProductValidity {
   /**
    * Certificate validity types.   - YEARS: certificate validity in years.   - MONTHS: certificate validity in months.   - DAYS: certificate validity in days.   - HOURS: certificate validity in hours.   - MINUTES: certificate validity in minutes.   - SECONDS: certificate validity in seconds. 
@@ -125,7 +125,7 @@ public class ProductValidity {
    * Certificate validity types.   - YEARS: certificate validity in years.   - MONTHS: certificate validity in months.   - DAYS: certificate validity in days.   - HOURS: certificate validity in hours.   - MINUTES: certificate validity in minutes.   - SECONDS: certificate validity in seconds. 
    * @return validityType
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "HOURS", required = true, value = "Certificate validity types.   - YEARS: certificate validity in years.   - MONTHS: certificate validity in months.   - DAYS: certificate validity in days.   - HOURS: certificate validity in hours.   - MINUTES: certificate validity in minutes.   - SECONDS: certificate validity in seconds. ")
 
   public ValidityTypeEnum getValidityType() {
@@ -139,7 +139,7 @@ public class ProductValidity {
    * The default certificate validity
    * @return validity
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "1", value = "The default certificate validity")
 
   public Integer getValidity() {
@@ -153,7 +153,7 @@ public class ProductValidity {
    * Optional certificate validity values
    * @return validityOptions
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "Optional certificate validity values")
 
   public List<Integer> getValidityOptions() {

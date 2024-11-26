@@ -36,7 +36,7 @@ import org.openapitools.client.JSON;
 /**
  * CertificateOrders
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CertificateOrders {
   public static final String SERIALIZED_NAME_DRAW = "draw";
   @SerializedName(SERIALIZED_NAME_DRAW)
@@ -73,7 +73,7 @@ public class CertificateOrders {
    * Get draw
    * @return draw
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public Integer getDraw() {
@@ -87,7 +87,7 @@ public class CertificateOrders {
    * Total records, after filtering (i.e. the total number of records after filtering has been applied - not just the number of records being returned for this page of data).
    * @return recordsFiltered
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "Total records, after filtering (i.e. the total number of records after filtering has been applied - not just the number of records being returned for this page of data).")
 
   public Integer getRecordsFiltered() {
@@ -101,7 +101,7 @@ public class CertificateOrders {
    * Total records, before filtering (i.e. the total number of records in the database)
    * @return recordsTotal
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "Total records, before filtering (i.e. the total number of records in the database)")
 
   public Integer getRecordsTotal() {
@@ -126,7 +126,7 @@ public class CertificateOrders {
    * Get data
    * @return data
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public List<CertificateOrder> getData() {
