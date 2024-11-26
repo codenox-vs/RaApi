@@ -37,7 +37,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * Client
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Client {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -76,7 +76,7 @@ public class Client {
    * Client UUID reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "cli-123e4567-e89b-12d3-a456-426614174000", required = true, value = "Client UUID reference")
 
   public String getUuid() {
@@ -90,7 +90,7 @@ public class Client {
    * Client name
    * @return name
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "Company XYZ", required = true, value = "Client name")
 
   public String getName() {
@@ -104,7 +104,7 @@ public class Client {
    * Client description
    * @return description
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Some information about Company XYZ", value = "Client description")
 
   public String getDescription() {
@@ -118,7 +118,7 @@ public class Client {
    * List of available certificate products
    * @return products
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "List of available certificate products")
 
   public List<Product> getProducts() {

@@ -20,7 +20,7 @@ import java.util.Map;
  * <p>ApiException class.</p>
  */
 @SuppressWarnings("serial")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ApiException extends Exception {
     private int code = 0;
     private Map<String, List<String>> responseHeaders = null;
@@ -157,7 +157,8 @@ public class ApiException extends Exception {
      *
      * @return The exception message
      */
-    public String getMessage() {
+    @Override
+	public String getMessage() {
         return String.format("Message: %s%nHTTP response code: %s%nHTTP response body: %s%nHTTP response headers: %s",
                 super.getMessage(), this.getCode(), this.getResponseBody(), this.getResponseHeaders());
     }

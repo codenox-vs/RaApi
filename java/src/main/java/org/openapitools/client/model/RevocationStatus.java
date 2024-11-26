@@ -36,7 +36,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * RevocationStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RevocationStatus {
   public static final String SERIALIZED_NAME_REVOKED_ON = "revokedOn";
   @SerializedName(SERIALIZED_NAME_REVOKED_ON)
@@ -71,7 +71,7 @@ public class RevocationStatus {
    * Revocation date in UTC
    * @return revokedOn
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", required = true, value = "Revocation date in UTC")
 
   public OffsetDateTime getRevokedOn() {
@@ -91,7 +91,7 @@ public class RevocationStatus {
    * Get reason
    * @return reason
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public RevocationReason getReason() {
@@ -108,7 +108,7 @@ public class RevocationStatus {
    * email of the person who revoked the certificate
    * @return revokedBy
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "some@email.org", required = true, value = "email of the person who revoked the certificate")
 
   public String getRevokedBy() {
@@ -128,7 +128,7 @@ public class RevocationStatus {
    * First- and last name of revocation requestor
    * @return revocationRequestor
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "John Doe", value = "First- and last name of revocation requestor")
 
   public String getRevocationRequestor() {

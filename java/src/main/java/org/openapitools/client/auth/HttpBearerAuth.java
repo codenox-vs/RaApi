@@ -19,7 +19,7 @@ import java.util.Map;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.Pair;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class HttpBearerAuth implements Authentication {
   private final String scheme;
   private String bearerToken;

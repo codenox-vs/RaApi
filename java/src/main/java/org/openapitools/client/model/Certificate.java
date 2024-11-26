@@ -34,7 +34,7 @@ import org.openapitools.client.JSON;
 /**
  * Certificate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Certificate {
   public static final String SERIALIZED_NAME_SUBJECT = "subject";
   @SerializedName(SERIALIZED_NAME_SUBJECT)
@@ -89,7 +89,7 @@ public class Certificate {
    * Certificate Subject Distinguished Name
    * @return subject
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "DC=COM,DC=Domain,OU=Some Organizational Unit,CN=Some Name", required = true, value = "Certificate Subject Distinguished Name")
 
   public String getSubject() {
@@ -103,7 +103,7 @@ public class Certificate {
    * Certificate Issuer Distinguished Name
    * @return issuer
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "DC=COM,DC=Domain,OU=Some Organizational Unit,CN=Issuer Name", required = true, value = "Certificate Issuer Distinguished Name")
 
   public String getIssuer() {
@@ -117,7 +117,7 @@ public class Certificate {
    * Certificate serial number (Big Integer HEX encoded)
    * @return serial
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "3893409CB666E1F092B7B6F28E1EAF4582AA7F21", required = true, value = "Certificate serial number (Big Integer HEX encoded)")
 
   public String getSerial() {
@@ -131,7 +131,7 @@ public class Certificate {
    * Certificate start validity in UTC
    * @return startValidity
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "2022-01-12T23:20:50.520Z", required = true, value = "Certificate start validity in UTC")
 
   public OffsetDateTime getStartValidity() {
@@ -145,7 +145,7 @@ public class Certificate {
    * Certificate start validity in UTC
    * @return endValidity
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "2023-01-12T23:20:50.520Z", required = true, value = "Certificate start validity in UTC")
 
   public OffsetDateTime getEndValidity() {
@@ -159,7 +159,7 @@ public class Certificate {
    * base64 encoded DER certificate
    * @return certificate
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "... [snipped] ... dGhpcyBpcyBhbiBleGFtcGxl ... [snipped] ...", required = true, value = "base64 encoded DER certificate")
 
   public String getCertificate() {
@@ -179,7 +179,7 @@ public class Certificate {
    * Get revocationStatus
    * @return revocationStatus
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(value = "")
 
   public RevocationStatus getRevocationStatus() {

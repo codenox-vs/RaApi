@@ -36,7 +36,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * CertificateOrderTask
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CertificateOrderTask {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -107,7 +107,7 @@ public class CertificateOrderTask {
    * Certificate Order Task reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "job-f0725b50-c533-4802-a844-de57bfb7a80e", required = true, value = "Certificate Order Task reference")
 
   public String getUuid() {
@@ -121,7 +121,7 @@ public class CertificateOrderTask {
    * Certificate Order creation date time
    * @return timeCreated
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", value = "Certificate Order creation date time")
 
   public OffsetDateTime getTimeCreated() {
@@ -135,7 +135,7 @@ public class CertificateOrderTask {
    * Scheduled date time
    * @return timeScheduled
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", value = "Scheduled date time")
 
   public OffsetDateTime getTimeScheduled() {
@@ -149,7 +149,7 @@ public class CertificateOrderTask {
    * Started date time
    * @return timeStarted
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", value = "Started date time")
 
   public OffsetDateTime getTimeStarted() {
@@ -163,7 +163,7 @@ public class CertificateOrderTask {
    * Finished date time
    * @return timeFinished
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "2022-02-12T05:10:50.520Z", value = "Finished date time")
 
   public OffsetDateTime getTimeFinished() {
@@ -183,7 +183,7 @@ public class CertificateOrderTask {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public JobStatus getStatus() {
@@ -206,7 +206,7 @@ public class CertificateOrderTask {
    * Get type
    * @return type
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public JobType getType() {
@@ -224,7 +224,7 @@ public class CertificateOrderTask {
    * minimum: 0
    * @return numberOfExecutions
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "2", required = true, value = "Number of executions")
 
   public Integer getNumberOfExecutions() {
@@ -238,7 +238,7 @@ public class CertificateOrderTask {
    * Response
    * @return response
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Processed successfully", value = "Response")
 
   public String getResponse() {
@@ -252,7 +252,7 @@ public class CertificateOrderTask {
    * Error message
    * @return error
   **/
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @ApiModelProperty(example = "Error processing xyz ...", value = "Error message")
 
   public String getError() {

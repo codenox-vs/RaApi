@@ -36,7 +36,7 @@ import org.openapitools.client.JSON;
 /**
  * APIError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class APIError {
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
@@ -67,7 +67,7 @@ public class APIError {
    * end user error UUID reference
    * @return uuid
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "123e4567-e89b-12d3-a456-426614174000", required = true, value = "end user error UUID reference")
 
   public UUID getUuid() {
@@ -81,7 +81,7 @@ public class APIError {
    * Error code
    * @return errorCode
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(example = "<000.000.0000>", required = true, value = "Error code")
 
   public String getErrorCode() {
@@ -106,7 +106,7 @@ public class APIError {
    * Get errorMessages
    * @return errorMessages
   **/
-  @javax.annotation.Nonnull
+  @jakarta.annotation.Nonnull
   @ApiModelProperty(required = true, value = "")
 
   public List<String> getErrorMessages() {
