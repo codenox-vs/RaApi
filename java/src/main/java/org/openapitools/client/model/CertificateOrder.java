@@ -383,6 +383,7 @@ public class CertificateOrder {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("uuid");
+    openapiFields.add("certificateChain");
     openapiFields.add("createdOn");
     openapiFields.add("status");
     openapiFields.add("clientReference");
@@ -441,7 +442,7 @@ public class CertificateOrder {
         throw new IllegalArgumentException(String.format("Expected the field `productReference` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productReference").toString()));
       }
       // validate the optional field `certificate`
-      if (jsonObj.getAsJsonObject("certificate") != null) {
+      if (jsonObj.get("certificate") != null && jsonObj.get("certificate").isJsonObject()) {
         Certificate.validateJsonObject(jsonObj.getAsJsonObject("certificate"));
       }
       // ensure the json data is an array
