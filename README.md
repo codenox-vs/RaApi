@@ -1,4 +1,5 @@
 ## Getting started
+* This is a fork. It was created to Upgrade the JAVA Client to Jakarta, Java 17 and upgraded all libs to latest version. Also solved some found Null Pointer.
 
 
 ### Basic workflow to generate a certificate via the RA API:
