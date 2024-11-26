@@ -64,8 +64,6 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.internal.http.HttpMethod;
 import okhttp3.internal.tls.OkHostnameVerifier;
-import okhttp3.logging.HttpLoggingInterceptor;
-import okhttp3.logging.HttpLoggingInterceptor.Level;
 import okio.Buffer;
 import okio.BufferedSink;
 import okio.Okio;
@@ -99,7 +97,6 @@ public class ApiClient {
     private OkHttpClient httpClient;
     private JSON json;
 
-    private HttpLoggingInterceptor loggingInterceptor;
 
     /**
      * Basic constructor for ApiClient
@@ -493,28 +490,7 @@ public class ApiClient {
         return debugging;
     }
 
-    /**
-     * Enable/disable debugging for this API client.
-     *
-     * @param debugging To enable (true) or disable (false) debugging
-     * @return ApiClient
-     */
-    public ApiClient setDebugging(boolean debugging) {
-        if (debugging != this.debugging) {
-            if (debugging) {
-                loggingInterceptor = new HttpLoggingInterceptor();
-                loggingInterceptor.setLevel(Level.BODY);
-                httpClient = httpClient.newBuilder().addInterceptor(loggingInterceptor).build();
-            } else {
-                final OkHttpClient.Builder builder = httpClient.newBuilder();
-                builder.interceptors().remove(loggingInterceptor);
-                httpClient = builder.build();
-                loggingInterceptor = null;
-            }
-        }
-        this.debugging = debugging;
-        return this;
-    }
+  
 
     /**
      * The path of temporary folder used to store downloaded files from endpoints
@@ -1362,10 +1338,10 @@ public class ApiClient {
     /**
      * Add a Content-Disposition Header for the given key and file to the MultipartBody Builder.
      *
-     * @param mpBuilder MultipartBody.Builder 
+     * @param mpBuilder MultipartBody.Builder
      * @param key The key of the Header element
      * @param file The file to add to the Header
-     */ 
+     */
     private void addPartToMultiPartBuilder(MultipartBody.Builder mpBuilder, String key, File file) {
         Headers partHeaders = Headers.of("Content-Disposition", "form-data; name=\"" + key + "\"; filename=\"" + file.getName() + "\"");
         MediaType mediaType = MediaType.parse(guessContentTypeFromFile(file));
