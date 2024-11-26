@@ -13,9 +13,9 @@
 
 package org.openapitools.client.model;
 
+import jakarta.ws.rs.core.GenericType;
 import java.util.Map;
 import java.util.Objects;
-import javax.ws.rs.core.GenericType;
 
 //import com.fasterxml.jackson.annotation.JsonValue;
 
@@ -111,7 +111,8 @@ public abstract class AbstractOpenApiSchema {
         return o.toString().replace("\n", "\n    ");
     }
 
-    public boolean equals(Object o) {
+    @Override
+	public boolean equals(Object o) {
         if (this == o) {
             return true;
         }
