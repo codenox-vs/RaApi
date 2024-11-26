@@ -13,12 +13,11 @@
 
 package org.openapitools.client.auth;
 
+import java.net.URI;
+import java.util.List;
+import java.util.Map;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.Pair;
-
-import java.net.URI;
-import java.util.Map;
-import java.util.List;
 
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ApiKeyAuth implements Authentication {

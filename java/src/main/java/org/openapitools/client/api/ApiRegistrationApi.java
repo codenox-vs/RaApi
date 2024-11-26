@@ -13,21 +13,18 @@
 
 package org.openapitools.client.api;
 
+import com.google.gson.reflect.TypeToken;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import org.openapitools.client.ApiCallback;
 import org.openapitools.client.ApiClient;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.ApiResponse;
 import org.openapitools.client.Configuration;
 import org.openapitools.client.Pair;
-import org.openapitools.client.ProgressRequestBody;
-import org.openapitools.client.ProgressResponseBody;
-
-import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
-
-import org.openapitools.client.model.APIError;
 import org.openapitools.client.model.AdditionalRecipient;
 import org.openapitools.client.model.CertificateOrder;
 import org.openapitools.client.model.CertificateOrderStatus;
@@ -39,13 +36,6 @@ import org.openapitools.client.model.Clients;
 import org.openapitools.client.model.IssueRequest;
 import org.openapitools.client.model.RevocationRequest;
 import org.openapitools.client.model.SearchCertificateOrder;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import javax.ws.rs.core.GenericType;
 
 public class ApiRegistrationApi {
     private ApiClient localVarApiClient;
@@ -168,7 +158,7 @@ public class ApiRegistrationApi {
 
     /**
      * Add additional recipients to Certificate Order
-     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients. 
+     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients (required)
      * @return List&lt;AdditionalRecipient&gt;
@@ -190,7 +180,7 @@ public class ApiRegistrationApi {
 
     /**
      * Add additional recipients to Certificate Order
-     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients. 
+     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients (required)
      * @return ApiResponse&lt;List&lt;AdditionalRecipient&gt;&gt;
@@ -213,7 +203,7 @@ public class ApiRegistrationApi {
 
     /**
      * Add additional recipients to Certificate Order (asynchronously)
-     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients. 
+     * Add additional recipients to Certificate Order. Existing users are skipped. Retuns list of effectively added additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -320,7 +310,7 @@ public class ApiRegistrationApi {
 
     /**
      * Register new prevalidated domains for the selected client given its reference Id
-     * Create and issue domains pre validation tokens for the selected client 
+     * Create and issue domains pre validation tokens for the selected client
      * @param clientReference Client reference UUID (required)
      * @param requestBody Client domains (required)
      * @return List&lt;ClientDNS&gt;
@@ -342,7 +332,7 @@ public class ApiRegistrationApi {
 
     /**
      * Register new prevalidated domains for the selected client given its reference Id
-     * Create and issue domains pre validation tokens for the selected client 
+     * Create and issue domains pre validation tokens for the selected client
      * @param clientReference Client reference UUID (required)
      * @param requestBody Client domains (required)
      * @return ApiResponse&lt;List&lt;ClientDNS&gt;&gt;
@@ -365,7 +355,7 @@ public class ApiRegistrationApi {
 
     /**
      * Register new prevalidated domains for the selected client given its reference Id (asynchronously)
-     * Create and issue domains pre validation tokens for the selected client 
+     * Create and issue domains pre validation tokens for the selected client
      * @param clientReference Client reference UUID (required)
      * @param requestBody Client domains (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -472,7 +462,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete additional recipients to Certificate Order
-     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients. 
+     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients to delete (required)
      * @return List&lt;AdditionalRecipient&gt;
@@ -494,7 +484,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete additional recipients to Certificate Order
-     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients. 
+     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients to delete (required)
      * @return ApiResponse&lt;List&lt;AdditionalRecipient&gt;&gt;
@@ -517,7 +507,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete additional recipients to Certificate Order (asynchronously)
-     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients. 
+     * Delete additional recipients to Certificate Order. Unknown users are skipped. Retuns list of effectively deleted additional recipients.
      * @param orderReference  (required)
      * @param additionalRecipient Array of additional recipients to delete (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -618,7 +608,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain for the selected reference Id
-     * Delete pre validated domain 
+     * Delete pre validated domain
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -637,7 +627,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain for the selected reference Id
-     * Delete pre validated domain 
+     * Delete pre validated domain
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -658,7 +648,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain for the selected reference Id (asynchronously)
-     * Delete pre validated domain 
+     * Delete pre validated domain
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -757,7 +747,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain token for the selected reference Id
-     * Delete pre validated domain token 
+     * Delete pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ClientDNS
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -778,7 +768,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain token for the selected reference Id
-     * Delete pre validated domain token 
+     * Delete pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ApiResponse&lt;ClientDNS&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -800,7 +790,7 @@ public class ApiRegistrationApi {
 
     /**
      * Delete prevalidated domain token for the selected reference Id (asynchronously)
-     * Delete pre validated domain token 
+     * Delete pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -900,7 +890,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve the certificate chain for the given Order reference
-     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate. 
+     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate.
      * @param orderReference  (required)
      * @return List&lt;String&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -921,7 +911,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve the certificate chain for the given Order reference
-     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate. 
+     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate.
      * @param orderReference  (required)
      * @return ApiResponse&lt;List&lt;String&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -943,7 +933,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve the certificate chain for the given Order reference (asynchronously)
-     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate. 
+     * Retrieve the certificate chain base64 encoded text. First element in list is leaf certificate, last element is Root certificate.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1043,7 +1033,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order given the Order reference
-     * Retrieve a certificate order given the order reference identifier. 
+     * Retrieve a certificate order given the order reference identifier.
      * @param orderReference  (required)
      * @return CertificateOrder
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1064,7 +1054,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order given the Order reference
-     * Retrieve a certificate order given the order reference identifier. 
+     * Retrieve a certificate order given the order reference identifier.
      * @param orderReference  (required)
      * @return ApiResponse&lt;CertificateOrder&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1086,7 +1076,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order given the Order reference (asynchronously)
-     * Retrieve a certificate order given the order reference identifier. 
+     * Retrieve a certificate order given the order reference identifier.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1186,7 +1176,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order status given the Order reference
-     * Retrieve a certificate order status given the order reference identifier. 
+     * Retrieve a certificate order status given the order reference identifier.
      * @param orderReference  (required)
      * @return CertificateOrderStatus
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1207,7 +1197,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order status given the Order reference
-     * Retrieve a certificate order status given the order reference identifier. 
+     * Retrieve a certificate order status given the order reference identifier.
      * @param orderReference  (required)
      * @return ApiResponse&lt;CertificateOrderStatus&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1229,7 +1219,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order status given the Order reference (asynchronously)
-     * Retrieve a certificate order status given the order reference identifier. 
+     * Retrieve a certificate order status given the order reference identifier.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1329,7 +1319,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order Tasks given the Order reference
-     * Retrieve a certificate order tasks given the order reference identifier. 
+     * Retrieve a certificate order tasks given the order reference identifier.
      * @param orderReference  (required)
      * @return List&lt;CertificateOrderTask&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1350,7 +1340,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order Tasks given the Order reference
-     * Retrieve a certificate order tasks given the order reference identifier. 
+     * Retrieve a certificate order tasks given the order reference identifier.
      * @param orderReference  (required)
      * @return ApiResponse&lt;List&lt;CertificateOrderTask&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1372,7 +1362,7 @@ public class ApiRegistrationApi {
 
     /**
      * Retrieve a Certificate Order Tasks given the Order reference (asynchronously)
-     * Retrieve a certificate order tasks given the order reference identifier. 
+     * Retrieve a certificate order tasks given the order reference identifier.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1471,7 +1461,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders
-     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings. 
+     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings.
      * @param searchCertificateOrder Certificate order search options (required)
      * @return List&lt;CertificateOrder&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1492,7 +1482,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders
-     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings. 
+     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings.
      * @param searchCertificateOrder Certificate order search options (required)
      * @return ApiResponse&lt;List&lt;CertificateOrder&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1514,7 +1504,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders (asynchronously)
-     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings. 
+     * Search for Certificate Orders given search parameters. The result list is limited to the maximum (default is 300) query result list settings.
      * @param searchCertificateOrder Certificate order search options (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1614,7 +1604,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get a client given its reference Id
-     * Get a client given its reference UUID 
+     * Get a client given its reference UUID
      * @param clientReference Client reference UUID (required)
      * @return Client
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1635,7 +1625,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get a client given its reference Id
-     * Get a client given its reference UUID 
+     * Get a client given its reference UUID
      * @param clientReference Client reference UUID (required)
      * @return ApiResponse&lt;Client&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1657,7 +1647,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get a client given its reference Id (asynchronously)
-     * Get a client given its reference UUID 
+     * Get a client given its reference UUID
      * @param clientReference Client reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1757,7 +1747,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get prevalidated domains for the selected domain reference Id
-     * Get pre validatied domain token for the selected identifier 
+     * Get pre validatied domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ClientDNS
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1778,7 +1768,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get prevalidated domains for the selected domain reference Id
-     * Get pre validatied domain token for the selected identifier 
+     * Get pre validatied domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ApiResponse&lt;ClientDNS&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1800,7 +1790,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get prevalidated domains for the selected domain reference Id (asynchronously)
-     * Get pre validatied domain token for the selected identifier 
+     * Get pre validatied domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1900,7 +1890,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get the list of prevalidated domains for the selected client given its reference Id
-     * Retrieve the list of pre validated domains and their status for the selected client 
+     * Retrieve the list of pre validated domains and their status for the selected client
      * @param clientReference Client reference UUID (required)
      * @return List&lt;ClientDNS&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1921,7 +1911,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get the list of prevalidated domains for the selected client given its reference Id
-     * Retrieve the list of pre validated domains and their status for the selected client 
+     * Retrieve the list of pre validated domains and their status for the selected client
      * @param clientReference Client reference UUID (required)
      * @return ApiResponse&lt;List&lt;ClientDNS&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1943,7 +1933,7 @@ public class ApiRegistrationApi {
 
     /**
      * Get the list of prevalidated domains for the selected client given its reference Id (asynchronously)
-     * Retrieve the list of pre validated domains and their status for the selected client 
+     * Retrieve the list of pre validated domains and their status for the selected client
      * @param clientReference Client reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2049,7 +2039,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using CSR
-     * Issue a certificate based on the Product reference (CSR) 
+     * Issue a certificate based on the Product reference (CSR)
      * @param productReference Certificate product reference UUID (required)
      * @param body Certificate Request in Base64 with start/end beacon (required)
      * @return CertificateOrder
@@ -2071,7 +2061,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using CSR
-     * Issue a certificate based on the Product reference (CSR) 
+     * Issue a certificate based on the Product reference (CSR)
      * @param productReference Certificate product reference UUID (required)
      * @param body Certificate Request in Base64 with start/end beacon (required)
      * @return ApiResponse&lt;CertificateOrder&gt;
@@ -2094,7 +2084,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using CSR (asynchronously)
-     * Issue a certificate based on the Product reference (CSR) 
+     * Issue a certificate based on the Product reference (CSR)
      * @param productReference Certificate product reference UUID (required)
      * @param body Certificate Request in Base64 with start/end beacon (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -2194,7 +2184,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using extended request attributes
-     * Issue a certificate based on the Product reference with extended attributes and CSR 
+     * Issue a certificate based on the Product reference with extended attributes and CSR
      * @param issueRequest Issue Request (required)
      * @return CertificateOrder
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2215,7 +2205,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using extended request attributes
-     * Issue a certificate based on the Product reference with extended attributes and CSR 
+     * Issue a certificate based on the Product reference with extended attributes and CSR
      * @param issueRequest Issue Request (required)
      * @return ApiResponse&lt;CertificateOrder&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2237,7 +2227,7 @@ public class ApiRegistrationApi {
 
     /**
      * Issue certificate using extended request attributes (asynchronously)
-     * Issue a certificate based on the Product reference with extended attributes and CSR 
+     * Issue a certificate based on the Product reference with extended attributes and CSR
      * @param issueRequest Issue Request (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2347,7 +2337,7 @@ public class ApiRegistrationApi {
 
     /**
      * Produce a user JWT
-     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60; 
+     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60;
      * @param userName  (required)
      * @param userSecret  (required)
      * @return String
@@ -2369,7 +2359,7 @@ public class ApiRegistrationApi {
 
     /**
      * Produce a user JWT
-     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60; 
+     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60;
      * @param userName  (required)
      * @param userSecret  (required)
      * @return ApiResponse&lt;String&gt;
@@ -2392,7 +2382,7 @@ public class ApiRegistrationApi {
 
     /**
      * Produce a user JWT (asynchronously)
-     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60; 
+     * Helper service to generate a JWT derived from you login username and API Key --- * Use the generated JWT in the header of __each__ HTTP request to the service  &#x60;Authorization: Bearer &lt;encoded JWT&gt;&#x60;
      * @param userName  (required)
      * @param userSecret  (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -2493,7 +2483,7 @@ public class ApiRegistrationApi {
 
     /**
      * Obtain a list of additional Certificate Order recipients
-     * List additional Certificate Order recipients 
+     * List additional Certificate Order recipients
      * @param orderReference  (required)
      * @return List&lt;AdditionalRecipient&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2514,7 +2504,7 @@ public class ApiRegistrationApi {
 
     /**
      * Obtain a list of additional Certificate Order recipients
-     * List additional Certificate Order recipients 
+     * List additional Certificate Order recipients
      * @param orderReference  (required)
      * @return ApiResponse&lt;List&lt;AdditionalRecipient&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2536,7 +2526,7 @@ public class ApiRegistrationApi {
 
     /**
      * Obtain a list of additional Certificate Order recipients (asynchronously)
-     * List additional Certificate Order recipients 
+     * List additional Certificate Order recipients
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2636,7 +2626,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate publication request for selected Certificate Order
-     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published. 
+     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published.
      * @param orderReference  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2655,7 +2645,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate publication request for selected Certificate Order
-     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published. 
+     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published.
      * @param orderReference  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2676,7 +2666,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate publication request for selected Certificate Order (asynchronously)
-     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published. 
+     * Publish or republish a certificate to the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already published.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2781,7 +2771,7 @@ public class ApiRegistrationApi {
 
     /**
      * Replace Certificate Order custom tags
-     * Replace certificate order custom tags with a new set of user defined tags/labels 
+     * Replace certificate order custom tags with a new set of user defined tags/labels
      * @param orderReference  (required)
      * @param requestBody List of user defined tags/labels (required)
      * @return CertificateOrder
@@ -2803,7 +2793,7 @@ public class ApiRegistrationApi {
 
     /**
      * Replace Certificate Order custom tags
-     * Replace certificate order custom tags with a new set of user defined tags/labels 
+     * Replace certificate order custom tags with a new set of user defined tags/labels
      * @param orderReference  (required)
      * @param requestBody List of user defined tags/labels (required)
      * @return ApiResponse&lt;CertificateOrder&gt;
@@ -2826,7 +2816,7 @@ public class ApiRegistrationApi {
 
     /**
      * Replace Certificate Order custom tags (asynchronously)
-     * Replace certificate order custom tags with a new set of user defined tags/labels 
+     * Replace certificate order custom tags with a new set of user defined tags/labels
      * @param orderReference  (required)
      * @param requestBody List of user defined tags/labels (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -2927,7 +2917,7 @@ public class ApiRegistrationApi {
 
     /**
      * Reset prevalidated domain token for the selected reference Id
-     * Reset pre validated domain token 
+     * Reset pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ClientDNS
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2948,7 +2938,7 @@ public class ApiRegistrationApi {
 
     /**
      * Reset prevalidated domain token for the selected reference Id
-     * Reset pre validated domain token 
+     * Reset pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ApiResponse&lt;ClientDNS&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2970,7 +2960,7 @@ public class ApiRegistrationApi {
 
     /**
      * Reset prevalidated domain token for the selected reference Id (asynchronously)
-     * Reset pre validated domain token 
+     * Reset pre validated domain token
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3069,7 +3059,7 @@ public class ApiRegistrationApi {
 
     /**
      * Revoke certificates
-     * Revoke one or more certificates 
+     * Revoke one or more certificates
      * @param revocationRequest Certificate references to revoke (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3088,7 +3078,7 @@ public class ApiRegistrationApi {
 
     /**
      * Revoke certificates
-     * Revoke one or more certificates 
+     * Revoke one or more certificates
      * @param revocationRequest Certificate references to revoke (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3109,7 +3099,7 @@ public class ApiRegistrationApi {
 
     /**
      * Revoke certificates (asynchronously)
-     * Revoke one or more certificates 
+     * Revoke one or more certificates
      * @param revocationRequest Certificate references to revoke (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3206,7 +3196,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings
      * @param search  (optional)
      * @return List&lt;Client&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3227,7 +3217,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings
      * @param search  (optional)
      * @return ApiResponse&lt;List&lt;Client&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3249,7 +3239,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator (asynchronously)
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The result list is limited to the maximum (default is 300) query result list settings
      * @param search  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3358,7 +3348,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders
-     * Search for Certificate Orders given search parameters. The search supports paging 
+     * Search for Certificate Orders given search parameters. The search supports paging
      * @param searchCertificateOrder Certificate order search options (required)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3381,7 +3371,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders
-     * Search for Certificate Orders given search parameters. The search supports paging 
+     * Search for Certificate Orders given search parameters. The search supports paging
      * @param searchCertificateOrder Certificate order search options (required)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3405,7 +3395,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Certificate Orders (asynchronously)
-     * Search for Certificate Orders given search parameters. The search supports paging 
+     * Search for Certificate Orders given search parameters. The search supports paging
      * @param searchCertificateOrder Certificate order search options (required)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3516,7 +3506,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging
      * @param search  (optional)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3540,7 +3530,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging
      * @param search  (optional)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3565,7 +3555,7 @@ public class ApiRegistrationApi {
 
     /**
      * Search Clients available to the RA Operator (asynchronously)
-     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging 
+     * Search for clients for which the RA Operator can issue, revoke or pre validate DNS entries. The Client information includes the list of assigned certificate products. The search supports paging
      * @param search  (optional)
      * @param length The number of items to return. When unset or &lt; 0, the maximum (default is 300) server side configured length setting is used. If length &gt; maximum (default is 300) server side configured length, then the server side setting is used.  (optional)
      * @param start the offset in search result for paging support (optional)
@@ -3668,7 +3658,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate un-publication request for selected Certificate Order
-     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published. 
+     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published.
      * @param orderReference  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3687,7 +3677,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate un-publication request for selected Certificate Order
-     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published. 
+     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published.
      * @param orderReference  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3708,7 +3698,7 @@ public class ApiRegistrationApi {
 
     /**
      * Send a certificate un-publication request for selected Certificate Order (asynchronously)
-     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published. 
+     * Remove the certificate from the external source (LDAP, SFTP or file system). Publication rule must be enabled on the issued certificate. An error is raised if the certificate is already un published.
      * @param orderReference  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3807,7 +3797,7 @@ public class ApiRegistrationApi {
 
     /**
      * Prevalidate domain for the selected domain reference Id
-     * Pre validate domain token for the selected identifier 
+     * Pre validate domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ClientDNS
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3828,7 +3818,7 @@ public class ApiRegistrationApi {
 
     /**
      * Prevalidate domain for the selected domain reference Id
-     * Pre validate domain token for the selected identifier 
+     * Pre validate domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @return ApiResponse&lt;ClientDNS&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3850,7 +3840,7 @@ public class ApiRegistrationApi {
 
     /**
      * Prevalidate domain for the selected domain reference Id (asynchronously)
-     * Pre validate domain token for the selected identifier 
+     * Pre validate domain token for the selected identifier
      * @param prevalidatedDomainReference Pre validated domain reference UUID (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

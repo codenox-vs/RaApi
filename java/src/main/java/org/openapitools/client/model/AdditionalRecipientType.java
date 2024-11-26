@@ -13,16 +13,11 @@
 
 package org.openapitools.client.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import io.swagger.annotations.ApiModel;
-import com.google.gson.annotations.SerializedName;
-
-import java.io.IOException;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
 
 /**
  * Notification type for additional recipient.   - DNS_OWNER_CHECK_EMAIL_LINK: send notification for DNS validation (email link) to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - DNS_CAB: send notification for CAB DNS change or CAB Agreed upon to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - ISSUANCE: send notification for certificate issuance to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - REVOCATION: send notification for certificate revocation to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - RENEWAL: send notification for certificate renewal to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - RECOVERY: send notification for key recovery to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - ISSUANCE_AUTHORIZATION: send notification for certificate issuance authorization to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - ISSUANCE_AUTHORIZATION_ACCEPTED: send notification for accepted certificate issuance authorization to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template.   - ISSUANCE_AUTHORIZATION_REJECTED: send notification for rejected certificate issuance authorization to additional recipient. Requires notification enabled for &#39;Additional recipient&#39; on notification template. 
